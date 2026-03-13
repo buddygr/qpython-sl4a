@@ -1,0 +1,13 @@
+QPython开源库作者：乘着船
+教程：https://www.bilibili.com/read/readlist/rl321663
+检查更新：https://gitee.com/buddygr/qpython-sl4a
+
+版本：20260314
+要求：QPython Plus 3.9.1 或以上
+
+QPython Plus 介绍：
+QPython Plus 对Python内核和部分SL4A函数进行了更新，使QPython支持Python3.12、新版SL4A、打开文件、外置卡读写、加解密、图形界面、音视频播放，优化了QPython自带浏览器，增强了SL4A服务稳定性。
+教程：
+  https://t.zsxq.com/88Cm2
+  https://www.bilibili.com/read/readlist/rl321663
+下载地址/检查更新/源代码：https://gitee.com/buddygr/qpython-3c。

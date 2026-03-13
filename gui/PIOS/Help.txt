@@ -1,0 +1,45 @@
+PIOS = Python Interactive Over Socket 基于套接字的Python交互
+Version 版本：v1.1
+
+默认端口号 Default Port : 12000 .
+
+In Termux：
+  python -i PIOS/server.py
+In QPython:
+  from PIOS.client import *
+  Connect()
+
+In Termux：
+  python -i PIOS/server.py 15234
+In QPython:
+  from PIOS.client import *
+  Connect(15234)
+
+In QPython：
+  from PIOS.server import *
+  Start()
+In Termux:
+  python -i PIOS/client.py
+
+In QPython：
+  from PIOS.server import *
+  Start(18379)
+In Termux:
+  python -i PIOS/client.py 18379
+
+Server Functions 服务器函数:
+  Start Server 启动服务器：
+    Start(port) # port 端口号，Return None
+    Start() # port = 12000，Return None
+
+Client Functions 客户端函数:
+  Connect to Server 连接服务器：
+    Connect(port) # port 端口号，Return None
+    Connect() # port = 12000，Return None
+  Remote Functions 远程函数：
+    RemoteEval(code) # Return: (Result,Error)
+    RemoteExec(code) # Return: (Result,Error)
+    RemoteSl4a(args) # Return: (Result,Error)，Only for QPython is a server 仅针对QPython服务器
+    RemoteShell(code) # Return: (Result,Error)， if QPython is a client and Termux is a server, it will open Termux 如果QPython 3C是客户端且Termux是服务器，将会打开Termux
+
+by 乘着船 20220515
