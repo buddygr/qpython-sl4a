@@ -1,0 +1,5 @@
+documentFileLastModified(path)
+Return a path's Last Modified time,
+    if path not exists or not available , return 0 .
+    path (String)
+Use This Function to Read/Write Media Storage Device or "/storage/emulated/0/Android/<subPath>" or Termux Document .

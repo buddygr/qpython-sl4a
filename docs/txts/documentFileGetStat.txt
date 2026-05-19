@@ -1,0 +1,5 @@
+documentFileGetStat(path)
+Return a dict of file length , last modified and file can read/write ,
+    if path not exists or not available , return None .
+    path (String)
+Use This Function to Read/Write Media Storage Device or "/storage/emulated/0/Android/<subPath>" or Termux Document .

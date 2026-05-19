@@ -1,0 +1,2 @@
+sensorsReadGyroscope()
+Returns the most recently received gyroscope value.

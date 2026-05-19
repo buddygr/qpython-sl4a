@@ -1,0 +1,3 @@
+bluetoothSetLocalName(name)
+Sets the Bluetooth Visible device name, returns True on success
+    name (String) New local name

@@ -1,0 +1,4 @@
+bluetoothAccept(uuid="457807c0-4897-11df-9879-0800200c9a66",timeout=0)
+Listens for and accepts a Bluetooth connection. Blocks until the connection is established or fails.
+    uuid (String)  (default=457807c0-4897-11df-9879-0800200c9a66)
+    timeout (Integer) How long to wait for a new connection, 0 is wait for ever (default=0)

@@ -1,0 +1,10 @@
+startApp(packagename, wait = True)
+    start an application / applications
+    packagename (Single String or List of String)
+    wait (Boolean Optional) wait for the started application(s) operation end
+
+Example of startApp :
+from androidhelper import Android
+droid = Android()
+droid.startApp('com.tencent.mm') #only one packagename
+droid.startApp(['com.tencent.mm','com.tencent.mobileqq'], False) #multi packagenames, do not wait started applications operation end

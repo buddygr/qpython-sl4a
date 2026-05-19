@@ -1,0 +1,2 @@
+batteryGetHealth()
+Returns the most recently received battery health data:1 - unknown;2 - good;3 - overheat;4 - dead;5 - over voltage;6 - unspecified failure;

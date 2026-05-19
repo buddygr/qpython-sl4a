@@ -1,0 +1,24 @@
+需要 QPython Plus >= 3.9.4，Termux >= 0.118 。
+
+第一步：
+  在 Termux 安装 Python ：
+    yes | pkg install python
+  授予“所有文件访问权限” ：
+    termux-setup-storage 。
+  如果已经设置，可以跳过以上步骤。
+  但是要彻底关闭 Termux 。
+
+第二步：
+  打开 QPython ，
+  设置 -- 权限 & 存储 -- 权限管理 -- 打开 显示悬浮窗、后台弹出界面、通知、创建快捷方式 权限。
+
+第三步：
+  在 QPython 运行如下命令：
+    from androidhelper import *
+    droid = Android()
+    #在弹出的第一个对话框中，授予QPython执行 Termux-RunCommandService 权限
+    #在弹出的第二个对话框中，选择Termux，并授予QPython读写Termux根目录权限，授权后将会自动跳转到 Termux-RunCommandService
+    droid.termuxStartService()
+    #如果成功，Termux会显示QSL4A信息(host,port,handshake)
+    droid.termuxGetQSL4A()
+  受限于QSL4A安全机制，每次重启QPython或关闭重开QSL4A服务，都需要重复运行第三步。

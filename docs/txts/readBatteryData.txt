@@ -1,0 +1,2 @@
+readBatteryData()
+Returns the most recently recorded battery data.

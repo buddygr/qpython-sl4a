@@ -1,0 +1,3 @@
+stopServiceIntent(intent)
+Stop Service using Intent
+    intent (Intent) Intent in the format as returned from makeIntent

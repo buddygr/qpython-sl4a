@@ -1,0 +1,8 @@
+documentFileGetUri(path, isDirectory = None)
+Return "content://com.android.externalstorage.documents/<ContentPaths>" according to the specific path .
+    path (String)
+    isDirectory (Boolean Optional) :
+        True  - must     be         a directory , create an empty folder         if not exist ;
+        False - must not be         a directory , create an empty file           if not exist ;
+        None  - don't know if it is a directory , create nothing and return None if not exist .
+Use This Function to Read/Write Media Storage Device or "/storage/emulated/0/Android/<subPath>" or Termux Document .

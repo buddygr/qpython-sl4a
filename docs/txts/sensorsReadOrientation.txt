@@ -1,0 +1,3 @@
+sensorsReadOrientation()
+Returns the most recently received orientation values.
+returns: (List) a List of Doubles [azimuth, pitch, roll].

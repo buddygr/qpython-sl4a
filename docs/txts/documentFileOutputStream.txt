@@ -1,0 +1,8 @@
+documentFileOutputStream( destFile, src, EncodingFormat = "", append = None )
+documentFileWriteTo is the same as documentFileOutputStream .
+If EncodingFormat is omitted (empty default) , src will be Bytes ;
+If EncodingFormat is Base64 , src will be Base64 String ;
+If EncodingFormat is UTF-8 or GBK etc , src will be Normal String ;
+When a destFile exists, if append is True, append content to the end of the destFile, if append is False or None, overwrite the original destFile .
+Return: If successful, return the byte length of the written data; if it fails, return None and an error message .
+Use This Function to Read/Write Media Storage Device or "/storage/emulated/0/Android/<subPath>" or Termux Document .

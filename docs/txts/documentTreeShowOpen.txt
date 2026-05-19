@@ -1,0 +1,17 @@
+documentTreeShowOpen( rootPath = '/storage/emulated/0' )
+    Request for Media Storage Write or "/storage/emulated/0/Android/<subPath>" Read/Write or Termux Documents Permissions .
+    documentFileShowOpen is the same as documentTreeShowOpen .
+    rootPath (String)
+    Return Uri String if Success , if Fail return None .
+
+Use This Function to Read/Write Media Storage Device or "/storage/emulated/0/Android/<subPath>" or Termux Documents ,
+    documentTreeShowOpen will get all documentFile functions to androidhelper at the same time ,
+    documentFile functions are very slow .
+
+    For Media Storage Devices :
+        use rootPath = "/storage/ABCD-EFGH" or "/mnt/ext_sdcard" , return "content://com.android.externalstorage.documents/<ContentPaths>" .
+
+    For "/storage/emulated/0/Android/<subPath>" :
+        For Android  7-10 , use rootPath = "/storage/emulated/0/Android/data"                  , return "file://<paths>" ;
+        For Android 11-13 , use rootPath = "/storage/emulated/0/Android/data/the.package.name" , return "content://com.android.externalstorage.documents/<ContentPaths>" .
+        For Termux Documents , use rootPath = "/com.termux" , return 'content://com.termux.documents/tree/%2Fdata%2Fdata%2Fcom.termux%2Ffiles%2Fhome' .

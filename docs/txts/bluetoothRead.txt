@@ -1,0 +1,4 @@
+bluetoothRead(bufferSize=4096,connID=None)
+Read up to bufferSize ASCII characters.
+    bufferSize (Integer)  (default=4096)
+    connID (String) Connection id (optional) (default=)

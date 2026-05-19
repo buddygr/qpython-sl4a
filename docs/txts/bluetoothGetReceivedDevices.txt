@@ -1,0 +1,4 @@
+bluetoothGetReceivedDevices()
+    Get received Bluetooth devices after droid.bluetoothDiscoveryStart() function
+    Include fields are name, bondState, type, uuid, connected, battery (if connected)  .
+    type : 0 = Unknown , 1 = Classic , 2 = LowEnergy , 3 = Dual .

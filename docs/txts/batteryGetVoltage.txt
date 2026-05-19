@@ -1,0 +1,2 @@
+batteryGetVoltage()
+Returns the most recently received battery voltage mV .

@@ -1,0 +1,4 @@
+documentTreeListAll()
+    List All Root Paths which documentFile have .
+    documentTreeListAll will get all documentFile functions to androidhelper at the same time ,
+    documentFile functions are very slow .

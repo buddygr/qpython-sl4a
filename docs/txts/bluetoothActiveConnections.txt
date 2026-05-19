@@ -1,0 +1,2 @@
+bluetoothActiveConnections()
+Returns true when there's an active Bluetooth connection.

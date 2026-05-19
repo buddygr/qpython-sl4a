@@ -1,0 +1,2 @@
+stopSensing()
+Stops collecting sensor data.

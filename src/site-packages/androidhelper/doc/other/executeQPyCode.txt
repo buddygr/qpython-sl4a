@@ -1,0 +1,4 @@
+executeQPyCode(code = "")
+Run QPython code .
+    code (String)
+    If code is "" (default), open python shell only .

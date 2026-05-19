@@ -1,0 +1,5 @@
+documentTreeRemove( rootPath )
+    rootPath is a String like "/com.termux" or "/storage/virtual" .
+    If success, return uri ,
+    if fail, return None .
+Use This Function to Read/Write Media Storage Device or "/storage/emulated/0/Android/<subPath>" or Termux Document .

@@ -1,0 +1,3 @@
+sensorsReadMagnetometer()
+Returns the most recently received magnetic field values.
+returns: (List) a List of Floats [(magnetic field value for) X axis, Y axis, Z axis].

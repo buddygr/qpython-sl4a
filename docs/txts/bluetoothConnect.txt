@@ -1,0 +1,5 @@
+bluetoothConnect(uuid="457807c0-4897-11df-9879-0800200c9a66",address=None)
+Connect to a device over Bluetooth. Blocks until the connection is established or fails.
+    uuid (String) The UUID passed here must match the UUID used by the server device. (default=457807c0-4897-11df-9879-0800200c9a66)
+    address (String) The user will be presented with a list of discovered devices to choose from if an address is not provided. (optional)
+returns: (String) True if the connection was established successfully.

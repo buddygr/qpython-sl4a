@@ -1,0 +1,5 @@
+bluetoothGetBondedDevicesRssi(interval=None)
+  interval (Integer Optional)
+    If interval > 0 , start detect connected devices' Rssi,
+    if interval < 0 , stop detect connected devices' Rssi,
+    if interval == 0 or interval == None , return connected device's address and Rssi, or return unconnected devices' address , you need to call droid.bluetoothGetBondedDevicesRssi(interval) with interval>0 first .

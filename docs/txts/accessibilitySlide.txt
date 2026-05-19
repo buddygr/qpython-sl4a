@@ -1,0 +1,6 @@
+accessibilitySlide ( XnYn=None, t=None )
+Accessibility Slide the Screen with Multi Points ,
+XnYn is a Coordinate Set consisting of n points ( X1, Y1, X2, Y2, …… Xn, Yn ) ,
+Coordinates X=Y=0 means the Center of the Screen ,
+The Coordinates X and Y can be Integers or Decimals such as 0.5 or -1.5 ,
+parameter Integer t is the Slide Time for Milliseconds , default value None means 50*n ( 50n milliseconds ) .

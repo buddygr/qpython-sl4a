@@ -1,0 +1,4 @@
+bluetoothWrite(ascii,connID="")
+Sends ASCII characters over the currently open Bluetooth connection.
+    ascii (String)
+    connID (String) Connection id (default=)

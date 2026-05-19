@@ -1,0 +1,5 @@
+accessibilityClick ( x=0, y=0, t=50 )
+Accessibility Click the Screen Point with the Coordinates ( x, y ) ,
+Default Coordinates ( 0, 0 ) means the Center of the Screen ,
+The Coordinates ( x, y ) can be Integers or Decimals such as 0.5 or -1.5 ,
+parameter Integer t is the Press Time for Milliseconds , default is 50 .

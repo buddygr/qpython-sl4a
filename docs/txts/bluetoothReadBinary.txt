@@ -1,0 +1,4 @@
+bluetoothReadBinary(bufferSize=4096,connID=None)
+Read up to bufferSize bytes and return a chunked, base64 encoded string.
+    bufferSize (Integer)  (default=4096)
+    connID (String) Connection id (optional) (default=)

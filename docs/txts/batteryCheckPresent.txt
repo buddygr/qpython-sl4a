@@ -1,0 +1,2 @@
+batteryCheckPresent()
+Returns the most recently received battery presence data.

@@ -1,0 +1,3 @@
+bluetoothMakeDiscoverable(duration=300)
+Requests that the device be discoverable for Bluetooth connections.
+    duration (Integer) period of time, in seconds, during which the device should be discoverable (default=300)

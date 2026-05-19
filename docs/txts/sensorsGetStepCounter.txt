@@ -1,0 +1,2 @@
+sensorsGetStepCounter()
+Returns the most recently Step Counter.

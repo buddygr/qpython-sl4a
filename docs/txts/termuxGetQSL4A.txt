@@ -1,0 +1,22 @@
+termuxGetQSL4A(swapPath = None, autoSetup = True)
+
+  Export QSL4A files to termux .
+
+  Preliminary preparation work on Termux :
+    Run command on Termux :
+      yes | pkg install python
+    Enable Termux's floating window permission (show on other apps) and background pop-up interface permission in the settings .
+    Termux is completely stop running .
+
+  Preliminary preparation work on QPython :
+    Enable QPython's floating window permission (show on other apps) , background pop-up interface permission and notification permission in the settings.
+    Run QSL4A function droid.termuxStartService and grant permission .
+
+  Then you can use this function .
+  When ask Storage Permission , give QPython the Termux Storage Root Permission .
+    
+  If swapPath is None, swapPath will auto change to '/sdcard/Android/media/com.termux/QPython SL4A Swap' .
+  
+  If autoSetup is False, QSL4A files will not be installed on Termux, only exported to swapPath, and you will need to manually install QSL4A on Termux.
+
+  Due to QSL4A security restrictions, the export folder is only valid during QPython startup once . 

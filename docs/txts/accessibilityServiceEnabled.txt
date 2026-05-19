@@ -1,0 +1,3 @@
+accessibilityServiceEnabled ()
+Check if Accessibility Service is Enabled ,
+Return True or False .

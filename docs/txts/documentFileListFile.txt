@@ -1,0 +1,4 @@
+documentFileListFiles( Folder )
+  Return List of Files of the Folder .
+  documentFileListFile is the same as documentFileListFiles .
+Use This Function to Read/Write Media Storage Device or "/storage/emulated/0/Android/<subPath>" or Termux Document .

@@ -1,0 +1,5 @@
+documentFileIsFile(path)
+Return a path is a file ,
+    if path not exists or not available , return None .
+    path (String)
+Use This Function to Read/Write Media Storage Device or "/storage/emulated/0/Android/<subPath>" or Termux Document .

@@ -1,0 +1,5 @@
+documentFileMkdir( Dir )
+  Make New Directory(s)
+  documentFileMkdirs is the same as documentFileMkdir .
+  Return True if Success .
+Use This Function to Read/Write Media Storage Device or "/storage/emulated/0/Android/<subPath>" or Termux Document .

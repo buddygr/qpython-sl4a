@@ -1,0 +1,17 @@
+recorderCaptureVideo(targetPath = None, duration = 10, cameraId = 0, quality = 8)
+Records video from the camera and saves it to the given location.
+    targetPath (String Optional) if omitted, use default path
+    duration (Integer Optional) seconds
+    cameraId (Integer Optional)
+    quality (Integer Optional)
+returns: targetPath
+
+
+recorderCaptureVideo.QUALITY_8KUHD = 13
+recorderCaptureVideo.QUALITY_2K    = 12
+recorderCaptureVideo.QUALITY_4KDCI = 10
+recorderCaptureVideo.QUALITY_2160P =  8
+recorderCaptureVideo.QUALITY_1080P =  6
+recorderCaptureVideo.QUALITY_720P  =  5
+recorderCaptureVideo.CAMERA_FRONT  =  1
+recorderCaptureVideo.CAMERA_BACK   =  0

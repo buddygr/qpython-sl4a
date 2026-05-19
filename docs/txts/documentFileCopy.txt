@@ -1,0 +1,3 @@
+documentFileCopy( SrcFileOrTree, DestFileOrTree )
+  Return None .
+Use This Function to Read/Write Media Storage Device or "/storage/emulated/0/Android/<subPath>" or Termux Document .

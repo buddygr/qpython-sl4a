@@ -1,0 +1,3 @@
+bluetoothReadReady(connID=None)
+Returns True if the next read is guaranteed not to block.
+    connID (String) Connection id (optional) (default=)

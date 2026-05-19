@@ -1,0 +1,3 @@
+fullDismiss()
+Dismiss Full Screen.
+Needs to run droid.fullShow first .

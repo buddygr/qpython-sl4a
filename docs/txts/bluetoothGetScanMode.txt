@@ -1,0 +1,7 @@
+bluetoothGetScanMode()
+Gets the scan mode for the local dongle.
+Return values:
+    -1 when Bluetooth is disabled.
+    0 if non discoverable and non connectable.
+    1 connectable non discoverable.
+    3 connectable and discoverable.

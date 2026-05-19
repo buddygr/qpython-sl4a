@@ -1,0 +1,4 @@
+startServiceIntent(intent,isForeground=False)
+Start Service using Intent
+    intent (Intent) Intent in the format as returned from makeIntent
+    isForeground (Boolean) startServiceForeground(intent) if True, startService(intent) if False (optional, false default)

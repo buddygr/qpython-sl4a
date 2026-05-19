@@ -1,0 +1,2 @@
+batteryGetCharge()
+Returns the most recently received battery Charge Counter μAh .

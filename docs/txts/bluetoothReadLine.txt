@@ -1,0 +1,3 @@
+bluetoothReadLine(connID=None)
+Read the next line.
+    connID (String) Connection id (optional) (default=)

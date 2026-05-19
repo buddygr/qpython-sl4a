@@ -1,0 +1,4 @@
+documentFileExists(path)
+Return a path is exists ,
+    path (String)
+Use This Function to Read/Write Media Storage Device or "/storage/emulated/0/Android/<subPath>" or Termux Document .

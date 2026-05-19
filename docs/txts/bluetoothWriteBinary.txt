@@ -1,0 +1,4 @@
+bluetoothWriteBinary(base64,connID=None)
+Send bytes over the currently open Bluetooth connection.
+    base64 (String) A base64 encoded String of the bytes to be sent.
+    connID (String) Connection id (optional) (default=)

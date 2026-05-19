@@ -1,0 +1,2 @@
+bluetoothGetLocalName()
+Gets the Bluetooth Visible device name

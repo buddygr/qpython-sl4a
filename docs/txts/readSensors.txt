@@ -1,0 +1,2 @@
+readSensors()
+Returns the most recently recorded sensor data.

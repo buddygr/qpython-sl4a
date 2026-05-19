@@ -1,0 +1,73 @@
+floatView(Args=None)
+    Show Float View .
+# FloatView Args is a dict which default (empty) value is :
+{
+    'index':-1,
+    # if index is omitted ( i.e. floatView.INDEX_NEW = -1 ) , create a new Float View,
+    # if index > 0, modify an existed Float View with index .
+    'text':"drag move\nlong click close",
+    # FloatView Drag Move , Long Click Close
+    'html':<omitted>,
+    # if has text, html will be omitted, if text is omitted and html has content, FloatView will use html
+    'width':300,
+    'height':150,
+    'x':0,
+    'y':0,
+    # original point (x=y=0) is the center of screen
+    # x,y,width,height can omitted means "last state"
+    'backColor':'7f7f7f7f',
+    'textColor':'ff000000',
+    # backColor and textColor can omitted means "last state"
+    'textSize':10,
+    'textAlign':0,
+    # floatView.TEXT_ALIGNMENT_INHERIT = 0
+    # textSize and textAlign can omitted means "last state"
+    'script':<omitted>, # script path
+    # after Long Click Close the FloatView, run script with script arg, if script is omitted, do nothing after Long Click Close the FloatView
+    'arg':<omitted>, # script arg
+    # script arg is use with script
+    'clickRemove':True,
+    'flag':40
+    # floatView.FLAG_DEFAULT_TOUCHABLE = 40
+}
+    Return Float View current chain list length (not the number of Float Views) .
+
+===== ===== ===== =====
+Float View Functions Example :
+
+>>> from androidhelper import *
+>>> droid = Android()
+>>> droid.floatView({'index':0,'text':'Hello World','width':400,'height':300,'x':-300,'y':-400,'backColor':'ff0000','textColor':'0000ff','textSize':16,'textAlign':droid.floatView.TEXT_ALIGNMENT_CENTER})
+Result(id=1, result=1, error=None)
+>>> droid.floatViewCount()
+Result(id=2, result=1, error=None)
+>>> droid.floatViewResult()
+Result(id=3, result={'x': -300, 'y': -400, 'time': 1772600484698, 'operation': 'initial', 'index': 0}, error=None)
+>>> droid.floatView({'index':0,'text':'QPython FloatView','width':300,'height':400,'x':400,'y':300}) #Then manually move FloatView to a different position
+Result(id=4, result=1, error=None)
+>>> droid.floatViewResult()
+Result(id=5, result={'x': -13, 'y': -580, 'time': 1772600575836, 'operation': 'move', 'index': 0}, error=None)
+>>> droid.floatViewRemove(0)
+Result(id=6, result=1, error=None)
+>>> droid.floatViewResult()
+Result(id=7, result={'removed': True, 'x': -13, 'y': -580, 'time': 1772600575836, 'operation': 'move', 'index': 0}, error=None)
+>>> droid.floatViewRemove()
+Result(id=8, result=0, error=None)
+>>> droid.floatViewResult()
+java.lang.Exception: Float View Index Out of Range .
+Result(id=9, result=None, error='java.lang.Exception: Float View Index Out of Range .')
+===== ===== ===== =====
+
+floatView.INDEX_NEW = -1
+floatView.FLAG_DEFAULT_TOUCHABLE = 40
+floatView.FLAG_DEFAULT_NOT_TOUCHABLE = 24
+floatView.FLAG_NOT_TOUCH_MODAL = 32
+floatView.FLAG_NOT_FOCUSABLE = 8
+floatView.FLAG_NOT_TOUCHABLE = 16
+floatView.TEXT_ALIGNMENT_INHERIT = 0
+floatView.TEXT_ALIGNMENT_GRAVITY = 1
+floatView.TEXT_ALIGNMENT_TEXT_START = 2
+floatView.TEXT_ALIGNMENT_TEXT_END = 3
+floatView.TEXT_ALIGNMENT_CENTER = 4
+floatView.TEXT_ALIGNMENT_VIEW_START = 5
+floatView.TEXT_ALIGNMENT_VIEW_END = 6

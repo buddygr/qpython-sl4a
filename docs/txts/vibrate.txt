@@ -1,0 +1,4 @@
+vibrate(duration=300)
+Vibrates the phone or a specified duration in milliseconds.
+    duration (Integer) duration in milliseconds (default=300)
+    need notification vibrate permission

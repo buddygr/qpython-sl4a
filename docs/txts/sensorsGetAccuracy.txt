@@ -1,0 +1,2 @@
+sensorsGetAccuracy()
+Returns the most recently received accuracy value.

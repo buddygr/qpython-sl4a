@@ -1,0 +1,2 @@
+sensorsGetLight()
+Returns the most recently received light value.

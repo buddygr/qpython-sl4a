@@ -1,0 +1,10 @@
+termuxStartService(virtualRoot = "/com.termux")
+  Start Termux Run Command and Termux Get QSL4A Service .
+  
+  Preliminary preparation work on QPython :
+    Enable QPython's floating window permission (show on other apps) , background pop-up interface permission and notification permission in the settings.
+    Enable QPython's Background Protect .
+  
+  virtualRoot (String) Indicate the virtual path you want to allocate to the Termux file system .
+  
+  Return com.termux.permission.RUN_COMMAND granted/requested .

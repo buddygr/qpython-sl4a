@@ -1,0 +1,3 @@
+bluetoothGetRemoteDeviceName(address)
+Queries a remote device for it's name or null if it can't be resolved
+    address (String) Bluetooth Address For Target Device

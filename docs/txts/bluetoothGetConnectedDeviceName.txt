@@ -1,0 +1,3 @@
+bluetoothGetConnectedDeviceName(connID=None)
+Returns the name of the connected device.
+    connID (String) Connection id (optional) (default=)

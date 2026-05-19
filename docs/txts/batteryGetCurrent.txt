@@ -1,0 +1,2 @@
+batteryGetCurrent()
+Returns the most recently received battery Current mA .

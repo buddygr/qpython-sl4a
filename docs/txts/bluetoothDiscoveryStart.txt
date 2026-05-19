@@ -1,0 +1,2 @@
+bluetoothDiscoveryStart()
+    Start Bluetooth Discovery

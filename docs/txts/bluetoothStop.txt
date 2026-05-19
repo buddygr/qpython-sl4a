@@ -1,0 +1,3 @@
+bluetoothStop(connID=None)
+Stops Bluetooth connection.
+    connID (String) Connection id (optional) (default=)

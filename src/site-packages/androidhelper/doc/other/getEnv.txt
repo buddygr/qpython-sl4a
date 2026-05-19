@@ -1,0 +1,4 @@
+getEnv ( variable = None )
+  Get Environment Variable from QPython,
+  Used for other client directly connect to QPython SL4A but not run Python on QPython app .
+  variable (String Optional) Environment Variable name , if None , return All Environment Variables .

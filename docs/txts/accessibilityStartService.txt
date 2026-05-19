@@ -1,0 +1,4 @@
+accessibilityStartService ()
+Start the Accessibility Service .
+Return True if start successful .
+Return False if start failed .

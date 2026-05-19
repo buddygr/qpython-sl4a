@@ -1,0 +1,2 @@
+batteryGetTechnology()
+Returns the most recently received battery technology data.

@@ -1,0 +1,2 @@
+batteryGetStatus()
+Returns  the most recently received battery status data:1 - unknown;2 - charging;3 - discharging;4 - not charging;5 - full;

@@ -1,0 +1,19 @@
+termuxRunCommand(path, args = [], workdir = None, background = False)
+  
+  Use QPython run Termux Command .
+  
+  Preliminary preparation work on Termux :
+    Enable Termux's floating window permission (show on other apps) and background pop-up interface permission in the settings .
+    Termux is Completely stop running .
+
+  Preliminary preparation work on QPython :
+    Enable QPython's floating window permission (show on other apps) , background pop-up interface permission and notification permission in the settings.
+    Run QSL4A function droid.termuxStartService and grant permissions .
+
+  Then you can use this function .
+  
+  Parameters:
+    path (String) : command path on termux ,
+    args (List of String Optional): arguments on termux ,
+    workdir (String Optional): working directory on termux , default is /data/data/com.termux/files/home ,
+    background (Boolean Optional , default is False): command run on background or foreground .

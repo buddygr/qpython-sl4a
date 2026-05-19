@@ -1,0 +1,2 @@
+batteryGetLevel()
+Returns the most recently received battery level (percentage).
