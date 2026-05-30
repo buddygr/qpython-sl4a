@@ -21,11 +21,4 @@ dialogShowAlert( title = "Alert", message = "The message of the alert .", positi
     droid.dialogSetNegativeButtonText(negativeButtonText)
     droid.dialogSetNeutralButtonText(neutralButtonText)
     droid.dialogShow()
-    try:
-        result=droid.dialogGetResponse().result
-        if result["which"]=="positive":
-            return result['value']
-        else:
-            return None
-    except:
-        return None
+    return droid.dialogGetResponse()

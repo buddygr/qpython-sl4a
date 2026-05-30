@@ -1,4 +1,4 @@
-dialogShowMultiChoice(self, title = "Alert", message = "The message of the alert .", items = None, selected = None, positiveButtonText = "OK", negativeButtonText = None, neutralButtonText = None, messageIsHtml = False )
+dialogShowMultiChoice( title = "Alert", message = "The message of the alert .", items = None, selected = None, positiveButtonText = "OK", negativeButtonText = None, neutralButtonText = None, messageIsHtml = False )
 Show the alert to the user .
     title (String Optional) title of the alert box (default=Alert)
     message (String Optional) message to display above the alert box (default=The message of the alert .)
@@ -16,7 +16,7 @@ print(droid.dialogShowMultiChoice("Title","Message",("Apple","Banana")).result)
 print(droid.dialogShowMultiChoice("Title","<font color=red>Warning</font> Information",("First","<font color=#00ffff>Second</font>","Third"),[0,2],"Yes","No","Cancel",True).result)
 
 This function is the same as these code :
-dialogShowMultiChoice(self, title = "Alert",message = "The message of the alert .", items = None, selected = None, positiveButtonText = "OK", negativeButtonText = None, neutralButtonText = None, messageIsHtml = False ):
+dialogShowMultiChoice( title = "Alert",message = "The message of the alert .", items = None, selected = None, positiveButtonText = "OK", negativeButtonText = None, neutralButtonText = None, messageIsHtml = False ):
     droid.dialogCreateAlert(title,message)
     droid.dialogSetMessageIsHtml(messageIsHtml)
     droid.dialogSetPositiveButtonText(positiveButtonText)
@@ -24,6 +24,4 @@ dialogShowMultiChoice(self, title = "Alert",message = "The message of the alert 
     droid.dialogSetNeutralButtonText(neutralButtonText)
     droid.dialogSetMultiChoiceItems(items,selected)
     droid.dialogShow()
-    result = droid.dialogGetResponse().result
-    result["selected"] = droid.dialogGetSelected().result
-    return result
+    return droid.dialogGetResponse()
