@@ -1,0 +1,7 @@
+DropbearSsh(port = 8022, cmd = "bash", swapPath = None)
+
+    Needs to run droid.termuxDropbearMakeKey() on QPython first .
+
+    port (Integer Optional) Dropbear SSH communication port ,
+    cmd (String Optional) Termux Command you need to run , example "bash" or "python" ,
+    swapPath (String Optional) default None means '/sdcard/Android/media/com.termux/QPython SL4A Swap' .

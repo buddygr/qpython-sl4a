@@ -10,7 +10,7 @@ termuxGetQSL4A(swapPath = None, autoSetup = True)
 
   Preliminary preparation work on QPython :
     Enable QPython's floating window permission (show on other apps) , background pop-up interface permission and notification permission in the settings.
-    Run QSL4A function droid.termuxStartService and grant permission .
+    Run QSL4A function droid.termuxStartService() and grant permission .
 
   Then you can use this function .
   When ask Storage Permission , give QPython the Termux Storage Root Permission .

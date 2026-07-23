@@ -1,0 +1,16 @@
+DropbearMakeKey(port = 8022, swapPath = None)
+    
+  Preliminary preparation work on Termux :
+    Run command on Termux :
+      yes | pkg install python dropbear
+    Enable Termux's floating window permission (show on other apps) and background pop-up interface permission in the settings .
+    Termux is Completely stop running .    
+
+  Preliminary preparation work on QPython :
+    Run QSL4A function droid.termuxStartService() and grant permission .
+    
+    Then you can use this function .
+  
+  Parameters:
+    port (Integer Optional) Dropbear SSH communication port ,
+    swapPath (String Optional) default None means '/sdcard/Android/media/com.termux/QPython SL4A Swap' .

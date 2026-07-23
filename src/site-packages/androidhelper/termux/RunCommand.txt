@@ -8,7 +8,7 @@ termuxRunCommand(path, args = [], workdir = None, background = False)
 
   Preliminary preparation work on QPython :
     Enable QPython's floating window permission (show on other apps) , background pop-up interface permission and notification permission in the settings.
-    Run QSL4A function droid.termuxStartService and grant permissions .
+    Run QSL4A function droid.termuxStartService() and grant permissions .
 
   Then you can use this function .
   
